@@ -17,11 +17,11 @@ const HomePage = () => {
       </div>
       {/* left Section */}
       <div className="flex flex-col justify-center gap-8 ">
-        <div className="text-3xl font-medium sm:text-5xl md:text-3xl">
+        <div className="text-4xl font-medium sm:text-6xl md:text-4xl">
           Hi!! Divya Gupta
         </div>
         <div>
-          <h2 className="text-4xl sm:text-5xl md:text-5xl">
+          <h2 className="text-5xl sm:text-6xl md:text-5xl">
             I'm a{' '}
             <span className="text-red-700 hover:scale-90 duration-300 ">
               <TypeAnimation
@@ -33,7 +33,7 @@ const HomePage = () => {
                   'Web',
                   1000,
 
-                  'Java',
+                  'Frontend ',
                   1000,
                 ]}
                 wrapper="span"
@@ -44,12 +44,12 @@ const HomePage = () => {
             <div>Developer</div>
           </h2>
         </div>
-        <div className="mt-4 w-[70%] font-md">
+        <div className="mt-4 w-[74%] font-sm text-2xl">
           I'm a software developer and here is my portfolio website. Here you'll
           learn about my journey as a software developer.
         </div>
         <Button
-          className="w-fit  px-4 py-8 shadow-md shadow-purple-950 text-xl font-semibold cursor-pointer transition-all duration-75 border-3 border-transparent hover:scale-105 "
+          className="w-fit !bg-red-500 px-4 py-8 shadow-md shadow-purple-950 text-xl font-semibold cursor-pointer transition-all duration-75 border-3 border-transparent hover:scale-105 "
           variant="contained"
           endIcon={<SendIcon />}
         >
@@ -58,7 +58,7 @@ const HomePage = () => {
       </div>
       {/* Right Section */}
       <div className="relative">
-        <div className="absolute size-20 -z-10 bottom-0.5 right-0 animate-pulse duration-1000 infinite">
+        <div className="absolute size-16 z-10 bottom-0.5 right-0 animate-pulse duration-1000 infinite">
           <img src={dots} alt="1 not found " />
         </div>
         <div className="absolute z-8 right-6 top-4 animate-spin duration-1000 infinite rotate-45">
@@ -75,7 +75,7 @@ const HomePage = () => {
         </div>
         <div className="">
           <img
-            className="w-[480px] h-[400px] p-12 transition-all duration-5000 animate-pulse z-[-9] animate-scaleInWithGrayscale duration-5000 ease-in-out"
+            className="w-[800px] h-[420px] p-12 transition-all  z-[-9] animate-scaleInWithGrayscale duration-5000 ease-in-out shadow-lg"
             src={User}
             alt="6 not found "
           />
