@@ -11,17 +11,17 @@ import SendIcon from '@mui/icons-material/Send';
 
 const HomePage = () => {
   return (
-    <div className="flex relative items-center justify-center gap-[5rem] my-[4rem] mx-[16rem] py-0 px-[1rem] pb-20">
-      <div className="select-none absolute text-5xl text-gray-200 font-semibold ease-in-out duration-300 bottom-[-8%] -ml-2">
+    <div className="flex relative w-[1000px] h-[500px] items-center justify-center gap-[5rem] my-[4rem] mx-[16rem] py-0 px-[1rem] pb-20">
+      <div className="select-none absolute text-5xl mt-2 text-gray-200 font-semibold ease-in-out duration-300 bottom-[-13%] mr-[600px] ">
         Divya Gupta
       </div>
       {/* left Section */}
       <div className="flex flex-col justify-center gap-8 ">
-        <div className="text-4xl font-medium sm:text-6xl md:text-4xl">
+        <div className="text-3xl font-normal sm:text-6xl md:text-3xl">
           Hi!! Divya Gupta
         </div>
         <div>
-          <h2 className="text-5xl sm:text-6xl md:text-5xl">
+          <h2 className="text-4xl sm:text-5xl md:text-4xl">
             I'm a{' '}
             <span className="text-red-700 hover:scale-90 duration-300 ">
               <TypeAnimation
@@ -37,19 +37,19 @@ const HomePage = () => {
                   1000,
                 ]}
                 wrapper="span"
-                speed={50}
+                speed={40}
                 repeat={Infinity}
               />
             </span>{' '}
             <div>Developer</div>
           </h2>
         </div>
-        <div className="mt-4 w-[74%] font-sm text-2xl">
+        <div className="mt-4 w-[74%] font-sm text-xl">
           I'm a software developer and here is my portfolio website. Here you'll
           learn about my journey as a software developer.
         </div>
         <Button
-          className="w-fit !bg-red-500 px-4 py-8 shadow-md shadow-purple-950 text-xl font-semibold cursor-pointer transition-all duration-75 border-3 border-transparent hover:scale-105 "
+          className="w-fit !bg-red-500 px-4 py-8 !mt-4 !shadow-md !shadow-purple-950 !text-lg font-semibold cursor-pointer transition-all duration-75 border-3 border-transparent hover:scale-105 "
           variant="contained"
           endIcon={<SendIcon />}
         >
@@ -75,7 +75,7 @@ const HomePage = () => {
         </div>
         <div className="">
           <img
-            className="w-[800px] h-[420px] p-12 transition-all  z-[-9] animate-scaleInWithGrayscale duration-5000 ease-in-out shadow-lg"
+            className="w-[700px] h-[380px] p-12 transition-all  z-[-9] animate-scaleInWithGrayscale duration-5000 ease-in-out shadow-lg"
             src={User}
             alt="6 not found "
           />
