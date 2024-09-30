@@ -40,7 +40,10 @@ function LinkedInButton() {
   );
 }
 
-const Card = ({ i }) => {
+const Card = ({ i, index }) => {
+  const transformClass = index % 2 === 0 ? '-translate-x-32' : 'translate-x-32';
+  const cardNumberPosition = index % 2 === 0 ? 'right-5 top-5' : 'left-5 top-5';
+
   return (
     //4card  project Container main div
     <div
@@ -49,10 +52,16 @@ const Card = ({ i }) => {
     >
       {/*1 card container */}
       <div className="w-[90%] h-[550px] relative">
-        <div className="absolute shadow-lg bg-cover shadow-gray-900 ">
+        <div
+          className={`absolute shadow-lg bg-cover shadow-gray-900 transition-transform duration-300 ${transformClass}`}
+        >
           <div class="cardshadow">{i.image}</div>
           {/* Card Number  */}
-          <div class="cardnumber ">{i.projectnum}</div>
+          <div
+            classname={`absolute z-10 text-9xl font-light text-white ${cardNumberPosition}`}
+          >
+            {i.projectnum}
+          </div>
           {/* project content */}
           <div className="flex flex-col absolute text-white p-[1em] bottom-[20%] z-5 gap-[1em] transition-all duration-[0.4s] top-[79px] left-[7%]">
             {/* icons/skills */}
@@ -130,3 +139,5 @@ const Card = ({ i }) => {
 };
 
 export default Card;
+
+// i recevied  the index as a prop now i want to use a in a single div in this div when the number is even shift the card on left 120px and if the number is add shift the card on right side 120px give me a code

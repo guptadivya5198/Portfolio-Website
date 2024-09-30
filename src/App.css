@@ -41,17 +41,6 @@ body {
   transform: scaleX(1);
 }
 
-.cardnumber {
-  position: absolute;
-  font-size: 100px;
-  font-weight: 300;
-  color: white;
-  z-index: 9;
-  right: -19px;
-  top: -45px;
-  /* display: none; */
-  opacity: 1;
-}
 .blob-style {
   position: absolute;
   top: 50%;

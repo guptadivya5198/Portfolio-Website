@@ -44,8 +44,8 @@ const Projects = () => {
               'Each course is designed to equip learners with the skills needed to thrive in the tech industry',
             image: <img src={bgimg5} />,
           },
-        ].map((i) => {
-          return <Card i={i} />;
+        ].map((i, index) => {
+          return <Card i={i} key={index} index={index} />;
         })}
       </div>
     </div>
