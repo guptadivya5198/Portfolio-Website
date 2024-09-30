@@ -1,6 +1,7 @@
 import Hearder from './Components/Hearder';
 import HomePage from './Components/HomePage';
 import Projects from './Components/Project/Projects';
+import Skills from './Components/Skills';
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Hearder />
       <HomePage />
       <Projects />
+      <Skills />
     </div>
   );
 }

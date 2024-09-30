@@ -10,7 +10,10 @@ body {
 body {
   font-family: 'Inter', sans-serif;
 }
-
+* {
+  scroll-behavior: smooth;
+}
+/* for black tint */
 .cardshadow::after {
   content: '';
   position: absolute;
@@ -20,7 +23,6 @@ body {
   left: 0;
   background-color: #1f1f1f9a;
   z-index: 0;
-  /* transform: scaleX(1); */
 }
 .cardshadow::before {
   content: '';
@@ -37,4 +39,36 @@ body {
 }
 .cardshadow:hover::before {
   transform: scaleX(1);
+}
+
+.cardnumber {
+  position: absolute;
+  font-size: 100px;
+  font-weight: 300;
+  color: white;
+  z-index: 9;
+  right: -19px;
+  top: -45px;
+  /* display: none; */
+  opacity: 1;
+}
+.blob-style {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: blobAnimate 3s linear infinite;
+  z-index: -5;
+}
+@keyframes blobAnimate {
+  50% {
+    top: 54%;
+    left: 56%;
+  }
+}
+.skills-logo {
+  width: 90px;
+  transition: all 0.5s;
+}
+.skills-logo:hover {
+  transform: scale(1.2);
 }
