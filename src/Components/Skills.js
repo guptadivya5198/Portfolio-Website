@@ -25,7 +25,7 @@ const Skills = () => {
   return (
     <div>
       <div className="flex relative w-[1000px] h-[500px] items-center justify-center gap-[2rem] my-[10rem] mx-auto py-5">
-        <div className="select-none absolute text-6xl mt-0 text-gray-200 font-semibold ease-in-out duration-300 bottom-[-4%] ml-[1372px] ">
+        <div className="select-none absolute text-6xl mt-0 text-gray-200 font-semibold ease-in-out duration-300 bottom-[-14%] ml-[1372px] ">
           Skills
         </div>
         {/* left part */}
