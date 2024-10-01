@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaDochub } from 'react-icons/fa6';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 
 const Hearder = () => {
   return (
@@ -9,10 +9,22 @@ const Hearder = () => {
         <div className="flex ">
           <FaDochub className="mt-4 ml-28 text-4xl" />
           <p className="mt-5 text-3xl">IVYA GUPTA</p>
-          <div className=" flex items-center ml-[45rem] gap-x-5 text-2xl mt-5 cursor-pointer ">
-            <NavLink to="/projects"> Projects</NavLink>
-            <NavLink to="/skills">Skills</NavLink>
-            <NavLink to="/contactme">Contact Me</NavLink>
+          <div>
+            <nav>
+              <ul className=" flex items-center ml-[45rem] gap-x-5 text-2xl mt-5 cursor-pointer ">
+                <li>
+                  {' '}
+                  <a href="#Project">Project</a>
+                </li>
+                <li>
+                  <a href="#Skills">Skills</a>
+                </li>
+                <li>
+                  {' '}
+                  <a href="#Contact Me">Contact Me</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </nav>

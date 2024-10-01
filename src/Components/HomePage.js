@@ -12,6 +12,7 @@ import SendIcon from '@mui/icons-material/Send';
 const HomePage = () => {
   return (
     <div className="flex relative w-[1000px] h-[500px] items-center justify-center gap-[5rem] my-[4rem] mx-[16rem] py-0 px-[1rem] pb-20">
+      {/* faded text */}
       <div className="select-none absolute text-5xl mt-2 text-gray-200 font-semibold ease-in-out duration-300 bottom-[-13%] mr-[600px] ">
         Divya Gupta
       </div>
