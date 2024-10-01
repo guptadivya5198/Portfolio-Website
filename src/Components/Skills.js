@@ -24,8 +24,8 @@ import K8s from '../images/stack/K8s.svg';
 const Skills = () => {
   return (
     <div>
-      <div className="flex relative w-[1000px] h-[500px] items-center justify-center gap-[2rem] my-[10rem] mx-auto py-5 ">
-        <div className="select-none absolute text-6xl mt-0 text-gray-200 font-semibold ease-in-out duration-300 bottom-[-13%] ml-[1372px] ">
+      <div className="flex relative w-[1000px] h-[500px] items-center justify-center gap-[2rem] my-[10rem] mx-auto py-5">
+        <div className="select-none absolute text-6xl mt-0 text-gray-200 font-semibold ease-in-out duration-300 bottom-[-4%] ml-[1372px] ">
           Skills
         </div>
         {/* left part */}
@@ -36,7 +36,7 @@ const Skills = () => {
             Mytech Stack
           </h2>
           <div className="w-[85%] mt-4 text-justify">
-            <p className="my-4 mx-0">
+            <p className="my-3 mx-0">
               As a Passionate Frontend Developer, I specialize in crafting
               dynamic and responsive web applications using ReactJS and
               JavaScript. My focus is on delivering seamless user experiences,
