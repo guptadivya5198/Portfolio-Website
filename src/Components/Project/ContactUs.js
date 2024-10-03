@@ -26,8 +26,8 @@ const ContactUs = () => {
   return (
     <section id="Contact Me">
       <div className="w-[1600px] bg-gray-200 -mt-24">
-        <div className="flex flex-col relative w-[1000px] h-[565px] items-center justify-center my-[10rem] mx-auto py-1">
-          <h1 className="text-8xl text-red-600 py-1 ">Contact Me</h1>
+        <div className="flex flex-col relative w-[1000px] h-[570px] items-center justify-center my-[10rem] mx-auto py-1">
+          <h1 className="text-8xl text-red-600 py-2 mt-5">Contact Me</h1>
           <h3 className="text-3xl text-slate-400 capitalize text-center mr-20">
             Have any feedback or just want to connect?
           </h3>

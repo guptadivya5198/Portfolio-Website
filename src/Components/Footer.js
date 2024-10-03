@@ -6,7 +6,10 @@ import { BiSolidMessageAltDetail } from 'react-icons/bi';
 
 function GitHubButton() {
   const handleClick = () => {
-    window.open('https://github.com', '_blank'); // Replace with your desired GitHub URL
+    window.open(
+      'https://github.com/guptadivya5198/Portfolio-Website',
+      '_blank'
+    ); // Replace with your desired GitHub URL
   };
 
   return (
@@ -18,12 +21,12 @@ function GitHubButton() {
 }
 function LinkedInButton() {
   const handleClick = () => {
-    window.open('https://www.linkedin.com', '_blank'); // Replace with your URL
+    window.open('https://www.linkedin.com/in/divya-gupta-6bb500302/', '_blank'); // Replace with your URL
   };
 
   return (
     <LinkedInIcon
-      className="cursor-pointer !text-white !text-[32px] hover:!text-red-500 mt-1 -ml-1 transition-all duration-[0.4s]"
+      className="cursor-pointer !text-white !text-[32px] mt-1 hover:!text-red-500 transition-all duration-[0.4s]"
       onClick={handleClick}
     />
   );
@@ -77,7 +80,10 @@ const Footer = () => {
           <LinkedInButton />
           <GitHubButton />
           <i>
-            <FaTwitter className="cursor-pointer !text-white !text-[32px] mt-1 hover:!text-red-500 transition-all duration-[0.4s]" />
+            <FaTwitter
+              className="cursor-pointer !text-white !text-[32px] mt-1 hover:!text-red-500 transition-all duration-[0.4s]"
+              onClick={() => window.open('https://twitter.com/', '_blank')}
+            />
           </i>
           <i>
             <BiSolidMessageAltDetail className="cursor-pointer !text-white !text-[32px] mt-1 hover:!text-red-500 transition-all duration-[0.4s]" />

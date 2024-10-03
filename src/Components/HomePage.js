@@ -12,7 +12,7 @@ import SendIcon from '@mui/icons-material/Send';
 const HomePage = () => {
   return (
     <section id="Home">
-      <div className="flex relative w-[1000px] h-[480px] items-center justify-center gap-[5rem] my-[4rem] mx-[16rem] py-0 px-[1rem] pb-20">
+      <div className="flex relative w-[1000px] h-[490px] items-center justify-center gap-[5rem] my-[4rem] mx-[16rem] py-0 px-[1rem] pb-20">
         {/* faded text */}
         <div className="select-none absolute text-5xl mt-1 text-gray-200 font-semibold ease-in-out duration-300 bottom-[-13%] ml-[700px] -mr-96">
           Divya Gupta
@@ -53,7 +53,7 @@ const HomePage = () => {
           <Button
             className="w-fit !bg-red-500 px-4 py-8 !mt-4 !shadow-md !shadow-purple-950 !text-lg font-semibold cursor-pointer transition-all duration-75 border-3 border-transparent hover:scale-105 "
             variant="contained"
-            endIcon={<SendIcon />}
+            SendIcon={<SendIcon />}
             onClick={() =>
               window.open(
                 'https://www.linkedin.com/in/divya-gupta-6bb500302/',

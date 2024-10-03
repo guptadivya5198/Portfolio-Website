@@ -17,7 +17,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function GitHubButton() {
   const handleClick = () => {
-    window.open('https://github.com', '_blank'); // Replace with your desired GitHub URL
+    window.open(
+      'https://github.com/guptadivya5198/Portfolio-Website',
+      '_blank'
+    ); // Replace with your desired GitHub URL
   };
 
   return (
@@ -29,7 +32,7 @@ function GitHubButton() {
 }
 function LinkedInButton() {
   const handleClick = () => {
-    window.open('https://www.linkedin.com', '_blank'); // Replace with your URL
+    window.open('https://www.linkedin.com/in/divya-gupta-6bb500302/', '_blank'); // Replace with your URL
   };
 
   return (
@@ -60,7 +63,7 @@ const Card = ({ i, index }) => {
             {i.projectnum}
           </div>
           {/* project content */}
-          <div className="flex flex-col absolute text-white p-[1em] bottom-[20%] z-5 gap-[1em] transition-all duration-[0.4s] top-[79px] left-[7%]">
+          <div className="flex flex-col absolute text-white p-[1em] bottom-[23%] z-5 gap-[1em] transition-all duration-[0.4s] top-[79px] left-[7%]">
             {/* icons/skills */}
             <div className="flex w-[60%] gap-[0.4em] flex-wrap ">
               <img className="w-[38px] h-[40px]" src={HTML} alt="not found 1" />
