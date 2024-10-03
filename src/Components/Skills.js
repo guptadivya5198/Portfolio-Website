@@ -25,14 +25,14 @@ const Skills = () => {
   return (
     <section id="Skills">
       <div>
-        <div className="flex relative w-[1000px] h-[500px] items-center justify-center gap-[2rem] my-[10rem] mx-auto py-5">
+        <div className="flex relative w-[1000px] h-[545px] items-center justify-center gap-[2rem] my-[10rem] mx-auto py-5">
           <div className="select-none absolute text-6xl mt-0 text-gray-200 font-semibold ease-in-out duration-300 bottom-[-14%] ml-[1372px] ">
             Skills
           </div>
           {/* left part */}
           <div className="w-[50%] flex flex-col">
             <h2 className="text-5xl font-semibold text-red-600">
-              <span className="text-[90px]">M</span>e and
+              <span className="text-[80px]">M</span>e and
               <br />
               Mytech Stack
             </h2>
@@ -60,7 +60,7 @@ const Skills = () => {
           </div>
 
           {/* Right side */}
-          <div className="flex flex-wrap w-[50%] relative gap-8 justify-center">
+          <div className="flex flex-wrap w-[50%]  relative gap-8 justify-center">
             <img class="blob-style" src={BlogImg} alt="1 not found " />
             <img class="skills-logo" src={HTML} alt="2 not found " />
             <img class="skills-logo" src={CSS} alt="3 not found " />

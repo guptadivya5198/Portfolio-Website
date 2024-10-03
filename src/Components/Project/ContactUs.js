@@ -88,7 +88,7 @@ const ContactUs = () => {
                   className="font-light px-1 w-[100%] text-lg h-auto pt-3 my-2 mx-8 rounded-[3px] m-9 shadow-lg"
                 />
               </div>
-              <div className="ml-8 mb-3">
+              <div className="ml-8 mb-12">
                 <Button
                   className="w-fit !bg-red-500 px-4 py-1 !mt-1 !shadow-md !shadow-purple-950 !text-base font-semibold cursor-pointer transition-all duration-75  border-transparent hover:scale-95 "
                   variant="contained"

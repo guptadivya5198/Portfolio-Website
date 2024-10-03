@@ -2,6 +2,7 @@ import React from 'react';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { FaTwitter } from 'react-icons/fa';
+import { BiSolidMessageAltDetail } from 'react-icons/bi';
 
 function GitHubButton() {
   const handleClick = () => {
@@ -29,18 +30,26 @@ function LinkedInButton() {
 }
 const Footer = () => {
   return (
-    <div className="relative mt-1 bg-blue-900 p-20 w-[1600px]">
+    <div className="relative -mt-40 bg-blue-900 p-20 w-[1600px] h-52">
       {/* footer wrapper */}
-      <div className="flex gap-4 p-5 justify-evenly items-center">
+      <div className="flex gap-4 p-5 -mt-5 justify-between items-center">
         {/* footer faded text */}
-        <div className="select-none absolute text-6xl left-0 bottom-0 text-gray-600 font-semibold ease-in-out duration-300">
+        <div className="select-none absolute text-6xl left-0 bottom-1 text-gray-600 font-semibold ease-in-out duration-300">
           Divya Gupta
         </div>
         {/*link wrapper */}
         <div className="flex gap-5  ">
           <div>
             <a
-              className="text-white transition-all duration-600 hover:text-red-600"
+              className="text-white text-3xl underline font-serif transition-all duration-600 hover:text-red-600"
+              href="#Home"
+            >
+              Home
+            </a>
+          </div>
+          <div>
+            <a
+              className="text-white text-3xl underline font-serif transition-all duration-600 hover:text-red-600"
               href="#Project"
             >
               Project
@@ -48,7 +57,7 @@ const Footer = () => {
           </div>
           <div>
             <a
-              className="text-white transition-all duration-600 hover:text-red-600"
+              className="text-white text-3xl underline font-serif transition-all duration-600 hover:text-red-600"
               href="#Skills"
             >
               Skills
@@ -56,7 +65,7 @@ const Footer = () => {
           </div>
           <div>
             <a
-              className="text-white transition-all duration-600 hover:text-red-600"
+              className="text-white text-3xl underline font-serif  transition-all duration-600 hover:text-red-600"
               href="#Contact Me"
             >
               Contact Me
@@ -64,11 +73,14 @@ const Footer = () => {
           </div>
         </div>
         {/* icron-wrapper */}
-        <div className="flex gap-4 transition-all duration-600 hover:text-red-600 ">
+        <div className="flex gap-4 !mr-32 transition-all duration-600 hover:text-red-600 ">
           <LinkedInButton />
           <GitHubButton />
           <i>
-            <FaTwitter />
+            <FaTwitter className="cursor-pointer !text-white !text-[32px] mt-1 hover:!text-red-500 transition-all duration-[0.4s]" />
+          </i>
+          <i>
+            <BiSolidMessageAltDetail className="cursor-pointer !text-white !text-[32px] mt-1 hover:!text-red-500 transition-all duration-[0.4s]" />
           </i>
         </div>
       </div>

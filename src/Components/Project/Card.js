@@ -48,7 +48,7 @@ const Card = ({ i, index }) => {
     //4card  project Container main div
     <div className="max-w-[1000px] mx-auto -my-20 -py-2 px-0 flex flex-col gap-[120px]">
       {/*1 card container */}
-      <div className="w-[90%] h-[550px] relative">
+      <div className="w-[90%] h-[545px] relative">
         <div
           className={`absolute shadow-lg bg-cover bg-center shadow-gray-900 transition-transform duration-300 ${transformClass}`}
         >

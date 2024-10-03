@@ -10,7 +10,7 @@ const Projects = () => {
     <section id="Project">
       <div className="bg-gray-200 mt-16">
         <div>
-          <h2 className="text-red-600 mb-[7rem] mt-4 font-semibold text-6xl text-center md:">
+          <h2 className="text-red-600 mb-[7rem] mt-4 font-semibold text-6xl text-center ">
             Projects
           </h2>
         </div>
