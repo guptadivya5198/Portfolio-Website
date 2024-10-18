@@ -55,7 +55,7 @@ const Card = ({ i, index }) => {
         <div
           className={`absolute shadow-lg bg-cover bg-center shadow-gray-900 transition-transform duration-300 ${transformClass}`}
         >
-          <div class="cardshadow ">{i.image}</div>
+          <div className="cardshadow ">{i.image}</div>
           {/* Card Number  */}
           <div
             classname={`absolute z-10 text-9xl font-light text-white ${cardNumberPosition}`}

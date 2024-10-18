@@ -12,18 +12,18 @@ import SendIcon from '@mui/icons-material/Send';
 const HomePage = () => {
   return (
     <section id="Home">
-      <div className="flex relative w-[1000px] h-[490px] items-center justify-center gap-[5rem] my-[4rem] mx-[16rem] py-0 px-[1rem] pb-20">
+      <div className="flex flex-col md:flex-row relative lg:w-[1200px] lg:h-[490px] md:w-[500px] md:h-[240px]sm:w-[300px] sm:h-[300px] items-center justify-center gap-20 md:gap-24 lg:my-16 sm:my-12 md:my-12 lg:mx-64 md:mx-auto py-0 px-4 sm:px-6 md:px-10 ">
         {/* faded text */}
-        <div className="select-none absolute text-5xl mt-1 text-gray-200 font-semibold ease-in-out duration-300 bottom-[-13%] ml-[700px] -mr-96">
+        <div className="select-none absolute text-5xl  sm:text-5xl md:text-6xl mt-1 text-gray-200 font-semibold ease-in-out duration-300 bottom-[-12%] sm:ml-auto sm:mr-auto md:ml-[650px] md:-mr-60 lg:ml-[700px] lg:-mr-90">
           Divya Gupta
         </div>
-        {/* left Section */}
-        <div className="flex flex-col justify-center gap-8 ">
-          <div className="text-3xl font-normal sm:text-6xl md:text-3xl">
+        {/* left Section  {Text & button}*/}
+        <div className="flex flex-col justify-center sm:w-full md:w-[60%]  lg:w-[80%] gap-6 sm:gap-8 text-center md:text-left ">
+          <div className=" sm:text-4xl md:text-2xl font-normal">
             Hi!! Divya Gupta
           </div>
           <div>
-            <h2 className="text-4xl sm:text-5xl md:text-4xl">
+            <h2 className="text-3xl sm:text-4xl md:text-3xl">
               I'm a{' '}
               <span className="text-red-700 hover:scale-90 duration-300 ">
                 <TypeAnimation
@@ -46,12 +46,12 @@ const HomePage = () => {
               <div>Developer</div>
             </h2>
           </div>
-          <div className="mt-4 w-[74%] font-sm text-xl">
+          <div className="mt-4 sm:text-base md:text-xl lg:text-xl sm:w-[100%] md:w-[80%]">
             I'm a software developer and here is my portfolio website. Here
             you'll learn about my journey as a software developer.
           </div>
           <Button
-            className="w-fit !bg-red-500 px-4 py-8 !mt-4 !shadow-md !shadow-purple-950 !text-lg font-semibold cursor-pointer transition-all duration-75 border-3 border-transparent hover:scale-105 "
+            className="w-fit md:items-center sm:items-center flex !bg-red-500 px-4 py-8 !mt-4 !shadow-md !shadow-purple-950 !text-lg font-semibold cursor-pointer transition-all duration-75 border-3 border-transparent hover:scale-105 "
             variant="contained"
             SendIcon={<SendIcon />}
             onClick={() =>
@@ -65,25 +65,25 @@ const HomePage = () => {
           </Button>
         </div>
         {/* Right Section */}
-        <div className="relative">
-          <div className="absolute size-16 z-10 bottom-0.5 right-0 animate-pulse duration-1000 infinite">
+        <div className="relative  mt-6 md:mt-0 w-full md:w-[60%] lg:w-[50%] sm:w-[80%] flex justify-center items-center">
+          <div className="absolute size-16 z-10 bottom-0.5 right-0 w-8 h-8 md:w-12 md:h-12  animate-pulse duration-1000 infinite">
             <img src={dots} alt="1 not found " />
           </div>
-          <div className="absolute z-8 right-6 top-4 animate-spin duration-1000 infinite rotate-45">
+          <div className="absolute z-8 right-6 top-4  w-8 h-8 md:w-12 md:h-12  animate-spin duration-1000 infinite rotate-45">
             <img src={cube} alt="2 not found " />
           </div>
-          <div className="absolute z-9 bottom-2 left-7 animate-bounce h-16 w-8 rounded-full duration-1000 infinite">
+          <div className="absolute z-9 bottom-2 left-7  w-8 h-16 md:w-12 md:h-12 animate-bounce rounded-full duration-1000 infinite">
             <img src={circle} alt="3 not found " />
           </div>
-          <div className="absolute z-9 top-7 left-2 animate-zigzag h-10 w-20 duration-1000 infinite">
+          <div className="absolute z-9 top-7 left-2 animate-zigzag w-12 h-12 md:w-16 md:h-16 duration-1000 infinite">
             <img src={zigzags} alt="4 not found " />
           </div>
-          <div className="absolute z-9 top-5 left-[45%] ease-in animate-bounce duration-1000 infinite ">
+          <div className="absolute z-9 top-5 left-[45%] ease-in  w-8 h-8 md:w-10 md:h-10 animate-bounce duration-1000 infinite ">
             <img src={plus} alt="5 not found " />
           </div>
           <div className="">
             <img
-              className="w-[700px] h-[380px] p-12 transition-all  z-[-9] animate-scaleInWithGrayscale duration-5000 ease-in-out shadow-lg"
+              className="lg:w-[700px] lg:h-[380px] sm:w-[250px] sm:h-[130px] md:w-[330px] md:h-[380px] p-12 transition-all z-[-9] animate-scaleInWithGrayscale object-cover duration-5000 ease-in-out shadow-lg"
               src={User}
               alt="6 not found "
             />
