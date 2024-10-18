@@ -6,13 +6,13 @@ const Hearder = () => {
     <div className="w-full bg-gray-50">
       <nav className="h-[3.5rem] w-full flex justify-between items-center px-6 sm:px-10 lg:px-28">
         <div className="flex items-center">
-          <FaDochub className="text-3xl sm:text-4xl" />
-          <p className="ml-0 mt-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold">
+          <FaDochub className="text-3xl sm:text-3xl" />
+          <p className="ml-0 mt-3 text-xl sm:text-xl md:text-3xl lg:text-4xl font-semibold">
             IVYA GUPTA
           </p>
         </div>
         <div>
-          <ul className="flex gap-x-4 sm:gap-x-6 lg:gap-x-8 text-lg sm:text-xl md:text-2xl lg:text-2xl cursor-pointer">
+          <ul className="flex gap-x-4 sm:gap-x-6 lg:gap-x-8 text-lg sm:text-lg md:text-2xl lg:text-2xl cursor-pointer">
             <li>
               <a href="#Project">Project</a>
             </li>
