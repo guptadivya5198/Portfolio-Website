@@ -12,18 +12,14 @@ import SendIcon from '@mui/icons-material/Send';
 const HomePage = () => {
   return (
     <section id="Home">
-      <div className="flex flex-col md:flex-row relative lg:w-[1200px] lg:h-[490px] md:w-[500px] md:h-[240px]sm:w-[300px] sm:h-[300px] items-center justify-center gap-20 md:gap-24 lg:my-16 sm:my-12 md:my-12 lg:mx-64 md:mx-auto py-0 px-4 sm:px-6 md:px-10 ">
-        {/* faded text */}
-        <div className="select-none absolute text-5xl  sm:text-5xl md:text-6xl mt-1 text-gray-200 font-semibold ease-in-out duration-300 bottom-[-12%] sm:ml-auto sm:mr-auto md:ml-[650px] md:-mr-60 lg:ml-[700px] lg:-mr-90">
-          Divya Gupta
-        </div>
+      <div className="flex flex-col lg:flex-row md:flex-row relative lg:w-[1200px] lg:h-[490px] md:w-[800px] md:h-[240px] sm:w-[300px] sm:h-[300px] items-center justify-center gap-16 md:gap-24 lg:my-2 sm:my-12 md:my-12 lg:mx-64 md:mx-auto py-0 px-4 sm:px-6 md:px-10 ">
         {/* left Section  {Text & button}*/}
-        <div className="flex flex-col justify-center sm:w-full md:w-[60%]  lg:w-[80%] gap-6 sm:gap-8 text-center md:text-left ">
-          <div className=" sm:text-4xl md:text-2xl font-normal">
+        <div className="flex flex-col justify-center sm:w-full md:w-[80%] md:h-[50%] lg:w-[80%] lg:gap-6 md:gap-2 md:mt-8 sm:gap-8 text-center md:text-left ">
+          <div className=" sm:text-3xl md:text-xl lg:text-2xl font-normal">
             Hi!! Divya Gupta
           </div>
           <div>
-            <h2 className="text-3xl sm:text-4xl md:text-3xl">
+            <h2 className="lg:text-3xl sm:text-4xl md:text-2xl">
               I'm a{' '}
               <span className="text-red-700 hover:scale-90 duration-300 ">
                 <TypeAnimation
@@ -43,26 +39,30 @@ const HomePage = () => {
                   repeat={Infinity}
                 />
               </span>{' '}
-              <div>Developer</div>
+              <div className="lg:text-3xl sm:text-4xl md:text-2xl">
+                Developer
+              </div>
             </h2>
           </div>
-          <div className="mt-4 sm:text-base md:text-xl lg:text-xl sm:w-[100%] md:w-[80%]">
+          <div className="mt-4 sm:text-base md:text-lg lg:text-xl sm:w-[100%] md:w-[80%]">
             I'm a software developer and here is my portfolio website. Here
             you'll learn about my journey as a software developer.
           </div>
-          <Button
-            className="w-fit md:items-center sm:items-center flex !bg-red-500 px-4 py-8 !mt-4 !shadow-md !shadow-purple-950 !text-lg font-semibold cursor-pointer transition-all duration-75 border-3 border-transparent hover:scale-105 "
-            variant="contained"
-            SendIcon={<SendIcon />}
-            onClick={() =>
-              window.open(
-                'https://www.linkedin.com/in/divya-gupta-6bb500302/',
-                '_blank'
-              )
-            }
-          >
-            Hire Me
-          </Button>
+          <div className="flex lg:mr-[80%] md:items-center md:justify-center sm:items-center sm:justify-center">
+            <Button
+              className="w-fit !bg-red-500 lg:px-4 lg:py-8 lg:!mt-4 !shadow-md !shadow-purple-950 !text-lg font-semibold cursor-pointer transition-all duration-75 border-3 border-transparent hover:scale-105 "
+              variant="contained"
+              SendIcon={<SendIcon />}
+              onClick={() =>
+                window.open(
+                  'https://www.linkedin.com/in/divya-gupta-6bb500302/',
+                  '_blank'
+                )
+              }
+            >
+              Hire Me
+            </Button>
+          </div>
         </div>
         {/* Right Section */}
         <div className="relative  mt-6 md:mt-0 w-full md:w-[60%] lg:w-[50%] sm:w-[80%] flex justify-center items-center">
