@@ -48,9 +48,9 @@ const HomePage = () => {
             I'm a software developer and here is my portfolio website. Here
             you'll learn about my journey as a software developer.
           </div>
-          <div className="flex lg:mr-[80%] md:items-center md:justify-center sm:items-center sm:justify-center">
+          <div className="flex lg:mt-[1%] md:mt-4 sm:mt-10 lg:mr-[82%] md:items-center md:justify-center sm:items-center">
             <Button
-              className="w-fit !bg-red-500 lg:px-4 lg:py-8 lg:!mt-4 !shadow-md !shadow-purple-950 !text-lg font-semibold cursor-pointer transition-all duration-75 border-3 border-transparent hover:scale-105 "
+              className=" !bg-red-500 lg:w-[100%] md:[60%] md:w[40%] lg:px-4 md:px-4 sm:px-2 lg:py-8 md:py-6 sm:py-4 !shadow-md !shadow-purple-950 !text-lg font-semibold cursor-pointer transition-all duration-75 border-3 border-transparent hover:scale-105 "
               variant="contained"
               SendIcon={<SendIcon />}
               onClick={() =>
