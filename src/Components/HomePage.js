@@ -45,12 +45,12 @@ const HomePage = () => {
             </h2>
           </div>
           <div className="mt-4 sm:text-base md:text-lg lg:text-xl sm:w-[100%] md:w-[80%]">
-            I'm a software developer and here is my portfolio website. Here
+            I'm a Software Developer and here is my portfolio website. Here
             you'll learn about my journey as a software developer.
           </div>
           <div className="flex lg:mt-[1%] md:mt-4 sm:mt-10 lg:mr-[82%] md:items-center md:justify-center sm:items-center">
             <Button
-              className=" !bg-red-500 lg:w-[100%] md:[60%] md:w[40%] lg:px-4 md:px-4 sm:px-2 lg:py-8 md:py-6 sm:py-4 !shadow-md !shadow-purple-950 !text-lg font-semibold cursor-pointer transition-all duration-75 border-3 border-transparent hover:scale-105 "
+              className="!bg-red-500 lg:w-[100%] md:[60%] md:w[40%] lg:px-4 md:px-4 sm:px-2 lg:py-8 md:py-6 sm:py-4 !shadow-md !shadow-purple-950 !text-lg font-semibold cursor-pointer transition-all duration-75 border-3 border-transparent hover:scale-105"
               variant="contained"
               SendIcon={<SendIcon />}
               onClick={() =>
