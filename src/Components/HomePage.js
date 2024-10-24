@@ -44,7 +44,7 @@ const HomePage = () => {
               </div>
             </h2>
           </div>
-          <div className="mt-1 lg:text-xl md:text-base sm:text-base sm:w-[100%] md:w-[100%]">
+          <div className="mt-0 lg:text-xl md:text-base sm:text-base sm:w-[100%] md:w-[100%]">
             I'm a Software Developer and here is my portfolio website. Here
             you'll learn about my journey as a software developer.
           </div>
