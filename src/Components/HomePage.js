@@ -12,16 +12,16 @@ import SendIcon from '@mui/icons-material/Send';
 const HomePage = () => {
   return (
     <section id="Home">
-      <div className="flex flex-col lg:flex-row md:flex-row relative lg:w-[1200px] lg:h-[490px] md:w-[800px] md:h-[240px] sm:w-[300px] sm:h-[300px] items-center justify-center gap-16 md:gap-24 lg:my-2 sm:my-12 md:my-12 lg:mx-64 md:mx-auto py-0 px-4 sm:px-6 md:px-10 ">
+      <div className="flex border border-red-700 flex-col lg:flex-row md:flex-row relative lg:w-[1200px] lg:h-[490px] md:w-[800px] md:h-[240px] sm:w-[300px] sm:h-[300px] items-center justify-center  md:gap-24 lg:my-6 sm:my-12 md:my-12 lg:mx-auto md:mx-auto lg:py-4 lg:px-7 sm:px-6 md:px-6">
         {/* left Section  {Text & button}*/}
-        <div className="flex flex-col justify-center sm:w-full md:w-[80%] md:h-[50%] lg:w-[80%] lg:gap-6 md:gap-2 md:mt-8 sm:gap-8 text-center md:text-left ">
-          <div className=" sm:text-3xl md:text-xl lg:text-2xl font-normal">
+        <div className="flex flex-col border border-green-900 justify-center w-full h-[50%] lg:w-[70%] lg:h-[90%] md:w-[90%] md:h-[93%] sm:w-full sm:h-[50%] lg:gap-6 md:gap-0 sm:gap-8 lg:mt-1 md:mt-2 text-center md:text-left">
+          <div className="lg:text-2xl md:text-lg sm:text-3xl font-normal">
             Hi!! Divya Gupta
           </div>
           <div>
-            <h2 className="lg:text-3xl sm:text-4xl md:text-2xl">
+            <h2 className="lg:text-3xl md:text-lg sm:text-3xl">
               I'm a{' '}
-              <span className="text-red-700 hover:scale-90 duration-300 ">
+              <span className="text-red-700 hover:scale-90 duration-300">
                 <TypeAnimation
                   sequence={[
                     // Same substring at the start will only be typed out once, initially
@@ -39,12 +39,12 @@ const HomePage = () => {
                   repeat={Infinity}
                 />
               </span>{' '}
-              <div className="lg:text-3xl sm:text-4xl md:text-2xl">
+              <div className="lg:text-3xl md:text-lg sm:text-3xl ">
                 Developer
               </div>
             </h2>
           </div>
-          <div className="mt-4 sm:text-base md:text-lg lg:text-xl sm:w-[100%] md:w-[80%]">
+          <div className="mt-1 lg:text-xl md:text-base sm:text-base sm:w-[100%] md:w-[100%]">
             I'm a Software Developer and here is my portfolio website. Here
             you'll learn about my journey as a software developer.
           </div>
@@ -65,7 +65,7 @@ const HomePage = () => {
           </div>
         </div>
         {/* Right Section */}
-        <div className="relative  mt-6 md:mt-0 w-full md:w-[60%] lg:w-[50%] sm:w-[80%] flex justify-center items-center">
+        <div className="relative border border-yellow-400 mt-6 md:mt-0 w-full md:w-[60%] lg:w-[50%] sm:w-[80%] flex justify-center items-center">
           <div className="absolute size-16 z-10 bottom-0.5 right-0 w-8 h-8 md:w-12 md:h-12  animate-pulse duration-1000 infinite">
             <img src={dots} alt="1 not found " />
           </div>
