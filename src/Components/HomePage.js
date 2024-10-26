@@ -48,9 +48,9 @@ const HomePage = () => {
             I'm a Software Developer and here is my portfolio website. Here
             you'll learn about my journey as a software developer.
           </div>
-          <div className="flex lg:mt-[1%] md:mt-0 sm:mt-10 lg:mr-[82%] md:items-center md:justify-center sm:items-center">
+          <div className="flex lg:mt-2 md:mt-0 sm:mt-10 lg:mr-[82%] md:items-center md:justify-center sm:items-center">
             <Button
-              className="bg-red-500 mx-auto w-[30%] h-9 lg:w-[100%] lg:h-[90%] md:[40%] sm:w-[26%] sm:h-[90%] xs:w-[30%] xs:h-[50%] lg:px-2 md:px-2 lg:py-2 md:py-2 py-1 mt-0 text-base !shadow-red-200 font-semibold cursor-pointer transition-all duration-75 border-3 border-transparent hover:scale-105"
+              className="bg-red-500 mx-auto w-[30%] h-9 lg:w-[100%] lg:h-[90%] md:[40%] sm:w-[26%] sm:h-[90%] xs:w-[30%] xs:h-[50%] lg:px-2 md:px-2 lg:py-2 md:py-2 py-1 mt-3 text-base !shadow-red-200 font-semibold cursor-pointer transition-all duration-75 border-3 border-transparent hover:scale-105"
               variant="contained"
               SendIcon={<SendIcon />}
               onClick={() =>
