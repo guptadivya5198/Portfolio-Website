@@ -68,7 +68,7 @@ const HomePage = () => {
         <div className="relative mt-1 w-full lg:w-[30%] lg:h-[90%] md:w-[60%] md:h-[92%] sm:w-[80%] flex justify-center items-center">
           <div className="flex items-center mt-3 justify-center w-[100%] h-[90%] lg:w-[90%] lg:h-[80%] lg:mt-0 md:w-[100%] md:h-[100%] sm:w-[60%] sm:h-[90%] ">
             <img
-              className="w-[30%] h-[90%] lg:w-[100%] lg:h-[100%] md:w-[100%] md:h-[100%] sm:items-center sm:justify-center sm:mx-auto sm:w-[60%] sm:h-[90%] p-5 lg:p-9 md:p-2 transition-all z-[-12] rounded-md animate-scaleInWithGrayscale object-cover duration-5000 shadow-lg"
+              className="w-[50%] h-[90%] lg:w-[100%] lg:h-[100%] md:w-[100%] md:h-[100%] sm:items-center sm:justify-center sm:mx-auto sm:w-[60%] sm:h-[100%] p-5 lg:p-9 md:p-2 transition-all z-[-12] rounded-md animate-scaleInWithGrayscale object-cover duration-5000 shadow-lg"
               src={User}
               alt="6 not found "
             />
