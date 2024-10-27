@@ -4,10 +4,10 @@ import { FaDochub } from 'react-icons/fa6';
 const Hearder = () => {
   return (
     <div className="w-full bg-gray-50">
-      <nav className="h-[5.1rem] w-[100%] flex justify-between items-center sm:px-6 md:px-20 lg:px-28">
+      <nav className="h-[4.6rem] w-[100%] flex justify-between items-center sm:px-6 md:px-20 lg:px-28">
         <div className="flex items-center w-[38%]">
-          <FaDochub className="lg:text-4xl md:text-4xl sm:text-xl md:ml-0 sm:ml-0" />
-          <p className="ml-0 sm:ml-0 lg:mt-3 sm:text-lg md:text-3xl lg:text-2xl font-semibold">
+          <FaDochub className="lg:text-5xl md:text-4xl sm:text-xl md:ml-0 sm:ml-0" />
+          <p className="ml-0 sm:ml-0 lg:mt-5 sm:text-lg md:text-3xl lg:text-2xl font-semibold">
             IVYA GUPTA
           </p>
         </div>
