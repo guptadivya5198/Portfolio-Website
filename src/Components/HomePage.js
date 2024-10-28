@@ -7,7 +7,7 @@ import SendIcon from '@mui/icons-material/Send';
 const HomePage = () => {
   return (
     <section id="Home">
-      <div className="flex flex-col lg:flex-row md:flex-row relative lg:w-[80rem] lg:h-[37rem] md:w-[800px] md:h-[240px] w-[300px] h-[300px] items-center justify-center md:gap-24 lg:my-6 my-12 md:my-12 lg:mx-auto md:mx-auto lg:py-4 lg:px-7 px-6 md:px-6">
+      <div className="border border-red-400 relative flex lg:flex-row md:flex-row flex-col lg:w-[75rem] lg:h-[32rem] md:w-[800px] md:h-[240px] w-[300px] h-[300px] items-center justify-center md:gap-24 lg:my-6 my-12 md:my-12 lg:mx-auto md:mx-auto lg:py-4 lg:px-7 px-6 md:px-6">
         {/* left Section  {Text & button}*/}
         <div className="flex flex-col justify-center w-full h-[50%] lg:w-[65%] lg:h-[90%] md:w-[90%] md:h-[93%]  lg:gap-6 md:gap-0 gap-8 lg:mt-1 md:mt-2 text-center md:text-left">
           <div className="lg:text-3xl md:text-lg text-3xl font-normal">
