@@ -7,7 +7,7 @@ const Hearder = () => {
       <nav className="navbar w-[100%] h-[4.1rem] flex items-center">
         <div className="custom-div flex border border-red-400 items-center w-[36%]">
           <FaDochub className="lg:text-5xl md:text-3xl text-2xl lg:mt-0 md:mt-2" />
-          <p className="lg:text-4xl md:text-2xl text-lg lg:mt-3 md:mt-3 lg:font-semibold md:font-semibold font-normal">
+          <p className="lg:text-4xl md:text-2xl text-lg lg:mt-3 md:mt-3 mt-1 lg:font-semibold md:font-semibold font-normal">
             IVYA GUPTA
           </p>
         </div>
