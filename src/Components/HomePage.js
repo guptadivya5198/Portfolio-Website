@@ -7,9 +7,9 @@ import SendIcon from '@mui/icons-material/Send';
 const HomePage = () => {
   return (
     <section id="Home">
-      <div className="border border-yellow-400 relative lg:flex-row md:flex-row flex flex-col lg:w-[80%] lg:h-[38rem] md:w-[85%] md:h-[33rem] w-[100%] h-[34rem] items-center justify-center md:gap-16 lg:ml-[7rem]">
+      <div className="border relative lg:flex-row md:flex-row flex flex-col lg:w-[80%] lg:h-[38rem] md:w-[85%] md:h-[33rem] w-[100%] h-[34rem] items-center justify-center md:gap-16 lg:ml-[7rem]">
         {/* left Section  {Text & button}*/}
-        <div className=" border border-yellow-00 flex flex-col justify-center lg:w-[65%] lg:h-[90%] md:w-[62%] md:h-[95%] w-full h-[50%] lg:gap-6 md:gap-[6%] gap-[4%] lg:mt-1 md:mt-[2%] mt-[-15%] text-center">
+        <div className="flex flex-col justify-center lg:w-[65%] lg:h-[90%] md:w-[62%] md:h-[95%] w-full h-[50%] lg:gap-6 md:gap-[6%] gap-[4%] lg:mt-1 md:mt-[2%] mt-[-15%] text-center">
           <div className="lg:text-3xl md:text-2xl text-3xl md:mt-[10%] mt-[1%] font-normal">
             Hi!! Divya Gupta
           </div>
@@ -58,10 +58,10 @@ const HomePage = () => {
           </div>
         </div>
         {/* Right Section */}
-        <div className="border border-yellow-00 relative lg:w-[30%] lg:h-[90%] md:w-[38%] md:h-[90%] w-[80%] flex justify-center items-center">
-          <div className="flex items-center mt-2 justify-center lg:w-[90%] lg:h-[80%] md:w-[100%] md:h-[100%]  w-[100%] h-[90%]">
+        <div className=" relative lg:w-[30%] lg:h-[90%] md:w-[38%] md:h-[90%] w-[80%] flex justify-center items-center">
+          <div className="flex items-center mt-[15%] justify-center lg:w-[90%] lg:h-[80%] md:w-[100%] md:h-[100%] w-[100%] h-[90%]">
             <img
-              className="w-[50%] h-[90%] lg:w-[100%] lg:h-[90%] md:w-[77%] md:h-[50%] items-center justify-center z-[-15] rounded-md object-cover duration-5000 lg:shadow-xl md:shadow-xl shadow-xl"
+              className="w-[50%] h-[90%] lg:w-[100%] lg:h-[90%] md:w-[77%] md:h-[50%] items-center justify-center z-[-15] rounded-md object-cover duration-5000 lg:shadow-xl md:shadow-xl shadow-3xl"
               src={User}
               alt="6 not found "
             />
