@@ -3,7 +3,7 @@ import { FaDochub } from 'react-icons/fa6';
 
 const Hearder = () => {
   return (
-    <div className="w-full border flex items-center justify-center border-red-400 bg-gray-100">
+    <div className="w-full border flex items-center justify-center border-red-00 bg-gray-100">
       <nav className="navbar w-[100%] h-[4.1rem]  flex items-center">
         <div className="custom-div border rounded-md flex items-center justify-center w-[38%]">
           <FaDochub className="lg:text-5xl border-black md:text-3xl text-2xl lg:mt-0 md:mt-2" />

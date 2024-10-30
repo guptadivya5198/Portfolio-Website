@@ -7,10 +7,10 @@ import SendIcon from '@mui/icons-material/Send';
 const HomePage = () => {
   return (
     <section id="Home">
-      <div className="border border-red-400 relative lg:flex-row md:flex-row flex flex-col lg:w-[80%] lg:h-[38rem] md:w-[85%] md:h-[33rem] w-[100%] h-[34rem] items-center justify-center md:gap-16 lg:ml-[7rem]">
+      <div className="border border-yellow-400 relative lg:flex-row md:flex-row flex flex-col lg:w-[80%] lg:h-[38rem] md:w-[85%] md:h-[33rem] w-[100%] h-[34rem] items-center justify-center md:gap-16 lg:ml-[7rem]">
         {/* left Section  {Text & button}*/}
-        <div className=" border border-yellow-800 flex flex-col justify-center lg:w-[65%] lg:h-[90%] md:w-[62%] md:h-[95%] w-full h-[50%] lg:gap-6 md:gap-[6%] gap-3 lg:mt-1 md:mt-[2%] mt-[3%] text-center">
-          <div className="lg:text-3xl md:text-2xl text-3xl md:mt-[10%] mt-[4%] font-normal">
+        <div className=" border border-yellow-800 flex flex-col justify-center lg:w-[65%] lg:h-[90%] md:w-[62%] md:h-[95%] w-full h-[50%] lg:gap-6 md:gap-[6%] gap-[4%] lg:mt-1 md:mt-[2%] mt-[0%] text-center">
+          <div className="lg:text-3xl md:text-2xl text-3xl md:mt-[10%] mt-[15%] font-normal">
             Hi!! Divya Gupta
           </div>
           <div>
