@@ -37,13 +37,13 @@ const HomePage = () => {
               <div className="lg:text-3xl md:text-2xl text-3xl ">Developer</div>
             </h2>
           </div>
-          <div className="mt-0 lg:text-xl md:text-lg text-base w-[100%] md:w-[100%]">
+          <div className="mt-0 lg:text-xl md:text-xl text-base w-[100%] md:w-[100%]">
             I'm a Software Developer and here is my portfolio website. Here
             you'll learn about my journey as a software developer.
           </div>
-          <div className="flex lg:mt-2 md:mt-[2%] mt-10 lg:mr-[82%] md:items-center md:justify-center items-center">
+          <div className="flex lg:mt-2 md:mt-[2%] mt-[5%] lg:mr-[82%] md:items-center md:justify-center items-center">
             <Button
-              className="bg-red-500 mx-auto lg:w-[100%] lg:h-[90%] md:w-[31%] w-[26%] h-[90%] mt-3 text-lg !shadow-red-100 cursor-pointer hover:scale-105"
+              className="bg-red-500 mx-auto lg:w-[100%] lg:h-[90%] md:w-[31%] w-[30%] h-[90%] mt-[4%] text-lg !shadow-red-100 cursor-pointer hover:scale-105"
               variant="contained"
               SendIcon={<SendIcon />}
               onClick={() =>
