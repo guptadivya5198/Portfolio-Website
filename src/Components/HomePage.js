@@ -9,7 +9,7 @@ const HomePage = () => {
     <section id="Home">
       <div className="border border-yellow-400 relative lg:flex-row md:flex-row flex flex-col lg:w-[80%] lg:h-[38rem] md:w-[85%] md:h-[33rem] w-[100%] h-[34rem] items-center justify-center md:gap-16 lg:ml-[7rem]">
         {/* left Section  {Text & button}*/}
-        <div className=" border border-yellow-800 flex flex-col justify-center lg:w-[65%] lg:h-[90%] md:w-[62%] md:h-[95%] w-full h-[50%] lg:gap-6 md:gap-[6%] gap-[4%] lg:mt-1 md:mt-[2%] mt-[0%] text-center">
+        <div className=" border border-yellow-800 flex flex-col justify-center lg:w-[65%] lg:h-[90%] md:w-[62%] md:h-[95%] w-full h-[50%] lg:gap-6 md:gap-[6%] gap-[4%] lg:mt-1 md:mt-[2%] mt-[-10%] text-center">
           <div className="lg:text-3xl md:text-2xl text-3xl md:mt-[10%] mt-[15%] font-normal">
             Hi!! Divya Gupta
           </div>
@@ -43,7 +43,7 @@ const HomePage = () => {
           </div>
           <div className="flex lg:mt-2 md:mt-[2%] mt-[5%] lg:mr-[82%] md:items-center md:justify-center items-center">
             <Button
-              className="bg-red-500 mx-auto lg:w-[100%] lg:h-[90%] md:w-[31%] w-[30%] h-[90%] mt-[4%] text-lg !shadow-red-100 cursor-pointer hover:scale-105"
+              className="bg-red-500 mx-auto lg:w-[100%] lg:h-[90%] md:w-[38%] w-[30%] h-[50%] mt-[4%] text-lg !shadow-red-100 cursor-pointer hover:scale-105"
               variant="contained"
               SendIcon={<SendIcon />}
               onClick={() =>
