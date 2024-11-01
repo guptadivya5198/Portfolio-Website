@@ -7,7 +7,7 @@ import SendIcon from '@mui/icons-material/Send';
 const HomePage = () => {
   return (
     <section id="Home">
-      <div className="border border-red-500 relative lg:flex-row md:flex-row flex flex-col sm:flex-col lg:w-[80%] lg:h-[38rem] md:w-[85%] md:h-[33rem] w-[100%] h-[34rem] sm:w-[100%] items-center justify-center md:gap-16 lg:ml-[12%] md:ml-[12%]">
+      <div className="relative lg:flex-row md:flex-row flex flex-col sm:flex-col lg:w-[80%] lg:h-[38rem] md:w-[85%] md:h-[33rem] w-[100%] h-[34rem] sm:w-[100%] items-center justify-center md:gap-16 lg:ml-[12%] md:ml-[12%]">
         {/* left Section  {Text & button}*/}
         <div className="flex flex-col justify-center lg:w-[60%] lg:h-[90%] md:w-[62%] md:h-[95%] w-[100%] h-[50%] sm:w-[90%] sm:h-[34rem] lg:gap-6 md:gap-[6%] gap-[4%] sm:gap-[4%] lg:mt-[0%] md:mt-[2%] mt-[-15%] sm:mt-[2%] text-center">
           <div className="lg:text-4xl md:text-2xl text-3xl sm:text-3xl md:mt-[10%] mt-[1%] font-normal">
@@ -60,7 +60,7 @@ const HomePage = () => {
           </div>
         </div>
         {/* Right Section */}
-        <div className="border border-red-00 relative lg:w-[30%] lg:h-[90%] md:w-[38%] md:h-[90%] w-[80%] sm:w-[40%] sm:mt-[0%] flex justify-center items-center">
+        <div className=" relative lg:w-[30%] lg:h-[90%] md:w-[38%] md:h-[90%] w-[80%] sm:w-[40%] sm:mt-[0%] flex justify-center items-center">
           <div className="flex items-center mt-[15%] sm:mt-[5%] justify-center lg:w-[80%] lg:h-[70%] md:w-[100%] md:h-[100%] w-[100%] h-[90%] sm:w-[90%] sm:h-[90%]">
             <img
               className="w-[50%] h-[90%] lg:w-[90%] lg:h-[90%] md:w-[77%] md:h-[50%] sm:w-[65%] sm:h-[90%] items-center justify-center z-auto rounded-md lg:shadow-2xl md:shadow-xl shadow-3xl"
