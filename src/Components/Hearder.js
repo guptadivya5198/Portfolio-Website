@@ -12,7 +12,7 @@ const Hearder = () => {
           </p>
         </div>
         <div className="flex items-center justify-center w-[67%] md:w-[70%]">
-          <ul className="flex md:gap-16 gap-3 md:mt-3 border md:ml-[280px] text-base md:text-4xl hover:cursor-pointer">
+          <ul className="flex md:gap-16 gap-3 md:mt-3 md:ml-[280px] text-base md:text-4xl hover:cursor-pointer">
             <li>
               <a href="#Project">Projects</a>
             </li>
