@@ -5,7 +5,7 @@ const Hearder = () => {
   return (
     <div className="w-full flex bg-gray-100">
       <nav className="w-[100%] h-[4.1rem] flex">
-        <div className="rounded-md flex items-center justify-center w-[33%] md:w-[30%]">
+        <div className="rounded-md border flex items-center justify-center w-[33%] md:w-[30%]">
           <FaDochub className=" border-black md:text-5xl md:mt-2" />
           <p className=" md:text-4xl md:mt-5 md:semifont-bold font-normal">
             IVYA GUPTA

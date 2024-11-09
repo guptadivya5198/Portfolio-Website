@@ -49,21 +49,21 @@ const Card = ({ i, index }) => {
 
   return (
     //4card  project Container main div
-    <div className="border border-red-500 max-w-[1000px] justify-center items-center flex flex-col gap-[120px]">
+    <div className="border border-green-700 md:w-[60%] md:h-[400px] md:mt-8 grid grid-cols-1">
       {/*1 card container */}
-      <div className="w-[90%] h-[545px] relative">
+      <div className="md:w-[84%] md:h-[545px] relative">
         <div
           className={`absolute shadow-lg bg-cover bg-center shadow-gray-900 transition-transform duration-300 ${transformClass}`}
         >
           <div className="cardshadow ">{i.image}</div>
           {/* Card Number  */}
           <div
-            classname={`absolute z-10 text-9xl font-light text-white ${cardNumberPosition}`}
+            classname={`absolute md:z-10 md:text-8xl font-light text-white ${cardNumberPosition}`}
           >
             {i.projectnum}
           </div>
           {/* project content */}
-          <div className="flex flex-col absolute text-white p-[1em] bottom-[23%] z-5 gap-[1em] transition-all duration-[0.4s] top-[79px] left-[7%]">
+          <div className="grid absolute text-white md:p-[0rem] bottom-[23%] z-5 gap-[1em] transition-all duration-[0.4s] top-[79px] left-[7%]">
             {/* icons/skills */}
             <div className="flex w-[60%] gap-[0.4em] flex-wrap ">
               <img className="w-[38px] h-[40px]" src={HTML} alt="not found 1" />

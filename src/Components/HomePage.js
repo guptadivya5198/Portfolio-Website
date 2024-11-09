@@ -10,7 +10,7 @@ const HomePage = () => {
       <div className="flex-wrap relative md:flex-row flex flex-col md:w-[75%] md:h-[39rem] w-[100%] h-[36rem] items-center justify-center md:gap-13 md:ml-[12%]">
         {/* left Section  {Text & button}*/}
         <div className="flex flex-col justify-center md:w-[62%] md:h-[95%] w-[100%] h-[50%] md:gap-[5%] gap-[4%] md:mt-[-2%] text-center">
-          <div className="md:text-3xl text-3xl md:mt-[8%] mt-[1%] font-normal">
+          <div className="md:text-4xl text-3xl md:mt-[8%] mt-[1%] font-normal">
             Hii!! Divya Gupta
           </div>
           <div>
@@ -38,7 +38,7 @@ const HomePage = () => {
             </h2>
           </div>
           <div className="mt-0 md:text-2xl text-sm w-[100%] md:w-[100%]">
-            I'm a Software Developer and here is my portfolio website. Here
+            I'm a Software Developer and here is my portfolio website.Here
             you'll learn about my journey as a software developer.
           </div>
           <div className="flex md:mt-[4%] mt-[2%] md:items-center md:justify-center items-center">
