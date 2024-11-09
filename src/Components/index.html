@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Numbers in Paragraphs</title>
+</head>
+<body>
+    <div id="numbers"></div>
+
+    <script>
+        const numbersDiv = document.getElementById("numbers");
+        
+        for (let i = 1; i <= 20; i++) {
+            const p = document.createElement("p");
+            p.textContent = i; // Paragraph ke andar number set karna
+            numbersDiv.appendChild(p); // Paragraph ko div mein add karna
+        }
+    </script>
+</body>
+</html>

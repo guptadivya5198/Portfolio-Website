@@ -8,9 +8,9 @@ import bgimg5 from '../../images/projects/project 5.png';
 const Projects = () => {
   return (
     <section id="Project">
-      <div className="bg-gray-200 mt-2 lg:mt-2 md:mt-2 sm:mt-2 border border-red-500">
+      <div className="bg-gray-200 border border-red-500">
         <div>
-          <h2 className="text-red-600 mb-[7rem] mt-6 font-semibold text-6xl text-center ">
+          <h2 className="text-red-600 lg:mb-[7rem] lg:mt-[1%] md:mt-[1%] sm:mt-[1%] mt-[1%] font-semibold text-6xl text-center ">
             Projects
           </h2>
         </div>

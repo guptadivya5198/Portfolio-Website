@@ -49,7 +49,7 @@ const Card = ({ i, index }) => {
 
   return (
     //4card  project Container main div
-    <div className="max-w-[1000px] mx-auto -my-20 -py-2 px-0 flex flex-col gap-[120px]">
+    <div className="border border-red-500 max-w-[1000px] justify-center items-center flex flex-col gap-[120px]">
       {/*1 card container */}
       <div className="w-[90%] h-[545px] relative">
         <div
