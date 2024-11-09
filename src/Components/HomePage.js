@@ -7,9 +7,9 @@ import SendIcon from '@mui/icons-material/Send';
 const HomePage = () => {
   return (
     <section id="Home">
-      <div className="flex-wrap relative md:flex-row flex flex-col md:w-[75%] md:h-[39rem] w-[100%] h-[34rem] items-center justify-center md:gap-13 md:ml-[12%]">
+      <div className="flex-wrap relative md:flex-row flex flex-col md:w-[75%] md:h-[39rem] w-[100%] h-[36rem] items-center justify-center md:gap-13 md:ml-[12%]">
         {/* left Section  {Text & button}*/}
-        <div className="flex flex-col justify-center md:w-[62%] md:h-[95%] w-[100%] h-[60%] md:gap-[5%] gap-[4%] md:mt-[-2%] text-center">
+        <div className="flex flex-col justify-center md:w-[62%] md:h-[95%] w-[100%] h-[50%] md:gap-[5%] gap-[4%] md:mt-[-2%] text-center">
           <div className="md:text-3xl text-3xl md:mt-[8%] mt-[1%] font-normal">
             Hii!! Divya Gupta
           </div>
