@@ -1,32 +1,29 @@
 import React from 'react';
-import { FaDochub } from 'react-icons/fa6';
 
-const Hearder = () => {
+const Header = () => {
   return (
-    <div className="w-full flex bg-gray-100">
-      <nav className="w-[100%] h-[4.1rem] flex">
-        <div className="rounded-md border flex items-center justify-center w-[33%] md:w-[30%]">
-          <FaDochub className=" border-black md:text-5xl md:mt-2" />
-          <p className=" md:text-4xl md:mt-5 md:semifont-bold font-normal">
-            IVYA GUPTA
-          </p>
+    <header className="w-full bg-gray-100 shadow-md fixed top-0 z-50">
+      <nav className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3 md:py-4">
+        <div className="flex items-center space-x-3">
+          <h1 className="text-xl md:text-3xl font-semibold text-gray-800">
+            <span className="span1">DIVYA</span>
+            <span className="span2"> GUPTA</span>
+          </h1>
         </div>
-        <div className="flex items-center justify-center w-[67%] md:w-[70%]">
-          <ul className="flex md:gap-16 gap-3 md:mt-3 md:ml-[280px] text-base md:text-4xl hover:cursor-pointer">
-            <li>
-              <a href="#Project">Projects</a>
-            </li>
-            <li>
-              <a href="#Skills">Skills</a>
-            </li>
-            <li>
-              <a href="#Contact Me">Contact Me</a>
-            </li>
-          </ul>
-        </div>
+        <ul className="hidden md:flex gap-10 text-gray-700 text-lg md:text-xl font-medium">
+          <li className="hover:text-red-500 transition">
+            <a href="#Project">Projects</a>
+          </li>
+          <li className="hover:text-red-500 transition">
+            <a href="#Skills">Skills</a>
+          </li>
+          <li className="hover:text-red-500 transition">
+            <a href="#Contact Me">Contact Me</a>
+          </li>
+        </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 
-export default Hearder;
+export default Header;

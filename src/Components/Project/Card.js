@@ -20,7 +20,7 @@ function GitHubButton() {
     window.open(
       'https://github.com/guptadivya5198/Portfolio-Website',
       '_blank'
-    ); // Replace with your desired GitHub URL
+    );
   };
 
   return (
