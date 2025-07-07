@@ -70,3 +70,15 @@ body {
 .skills-logo:hover {
   transform: scale(1.2);
 }
+
+.span2 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #ff6600;
+  font-weight: 900;
+}
+.span1 {
+  background: linear-gradient(to right, #e7005e, #ff9d00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}

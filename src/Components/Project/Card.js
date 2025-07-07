@@ -25,7 +25,7 @@ function GitHubButton() {
 
   return (
     <GitHubIcon
-      className="cursor-pointer !text-white !text-[32px] mt-1 hover:!text-red-500 transition-all duration-[0.4s]"
+      className="cursor-pointer !text-white md:!text-[32px] md:mt-1 hover:!text-red-500 transition-all duration-[0.4s]"
       onClick={handleClick}
     />
   );
@@ -37,100 +37,100 @@ function LinkedInButton() {
 
   return (
     <LinkedInIcon
-      className="cursor-pointer !text-white !text-[32px] hover:!text-red-500 mt-1 -ml-1 transition-all duration-[0.4s]"
+      className="cursor-pointer !text-white md:!text-[32px] hover:!text-red-500 md:mt-1 md:-ml-1 transition-all duration-[0.4s]"
       onClick={handleClick}
     />
   );
 }
 
 const Card = ({ i, index }) => {
-  const transformClass = index % 2 === 0 ? '-translate-x-32' : 'translate-x-32';
-  const cardNumberPosition = index % 2 === 0 ? 'right-5 top-5' : 'left-5 top-5';
+  const transformClass = index % 2 === 0 ? '-translate-x-13' : 'translate-x-64';
+  // const cardNumberPosition = index % 2 === 0 ? 'right-5 top-5' : 'left-5 top-5';
 
   return (
     //4card  project Container main div
-    <div className="border border-green-700 md:w-[60%] md:h-[400px] md:mt-8 grid grid-cols-1">
+    <div className="border border-red-800 relative md:w-[65%] md:h-[370px] md:mt-8 md:ml-60 ">
       {/*1 card container */}
-      <div className="md:w-[84%] md:h-[545px] relative">
-        <div
-          className={`absolute shadow-lg bg-cover bg-center shadow-gray-900 transition-transform duration-300 ${transformClass}`}
-        >
-          <div className="cardshadow ">{i.image}</div>
-          {/* Card Number  */}
-          <div
-            classname={`absolute md:z-10 md:text-8xl font-light text-white ${cardNumberPosition}`}
-          >
-            {i.projectnum}
+      <div
+        className={` md:w-[80%] rounded-md md:h-[364px] flex shadow-lg bg-cover bg-center shadow-gray-900 transition-transform duration-300 ${transformClass}`}
+      >
+        <div className="cardshadow  md:w-[100%] md:h-[362px]">{i.image}</div>
+        {/* project content */}
+        <div className="grid border border-red-600 absolute text-white md:p-[0rem] z-5 md:gap-[1rem] md:top-[69px] md:left-[6%]">
+          {/* icons/skills */}
+          <div className="flex md:w-[40%] md:h-[68%] md:gap-[0.2em] flex-wrap ">
+            <img
+              className="md:w-[14%] md:h-[48%] w-[10%] h-[26%]"
+              src={HTML}
+              alt="not found 1"
+            />
+            <img
+              className="md:w-[14%] md:h-[48%] w-[10%] h-[26%]"
+              src={CSS}
+              alt="not found 2"
+            />
+            <img
+              className="md:w-[14%] md:h-[48%] w-[10%] h-[26%]"
+              src={Javascript}
+              alt="not found 3"
+            />
+            <img
+              className="md:w-[14%] md:h-[48%] w-[10%] h-[26%] md:mt-2"
+              src={NodeJs}
+              alt="not found 4"
+            />
+            <img
+              className="md:w-[14%] md:h-[48%] w-[10%] h-[26%] md:mt-1"
+              src={NextJsCircle}
+              alt="not found 5"
+            />
+            <img
+              className="md:w-[14%] md:h-[48%] w-[10%] h-[26%] md:mt-2"
+              src={Tailwind}
+              alt="not found 6"
+            />
+            <img
+              className="md:w-[14%] md:h-[48%] w-[10%] h-[26%] "
+              src={Express}
+              alt="not found 7"
+            />
+            <img
+              className="md:w-[14%] md:h-[48%] w-[10%] h-[26%]"
+              src={MongoDB}
+              alt="not found 8"
+            />
+            <img
+              className="md:w-[15%] md:h-[48%] w-[10%] h-[26%]"
+              src={Redux}
+              alt="not found 9"
+            />
+            <img
+              className="md:w-[19%] md:h-[65%] w-[10%] h-[26%]"
+              src={Vercel}
+              alt="not found 10"
+            />
           </div>
-          {/* project content */}
-          <div className="grid absolute text-white md:p-[0rem] bottom-[23%] z-5 gap-[1em] transition-all duration-[0.4s] top-[79px] left-[7%]">
-            {/* icons/skills */}
-            <div className="flex w-[60%] gap-[0.4em] flex-wrap ">
-              <img className="w-[38px] h-[40px]" src={HTML} alt="not found 1" />
-              <img className="w-[38px] h-[40px]" src={CSS} alt="not found 2" />
-              <img
-                className="w-[38px] h-[40px]"
-                src={Javascript}
-                alt="not found 3"
-              />
-              <img
-                className="w-[48px] h-[40px] "
-                src={NodeJs}
-                alt="not found 4"
-              />
-              <img
-                className="w-[40px] h-[40px]"
-                src={NextJsCircle}
-                alt="not found 5"
-              />
-              <img
-                className="w-[44px] h-[40px]"
-                src={Tailwind}
-                alt="not found 6"
-              />
-              <img
-                className="w-[40px] h-[40px]"
-                src={Express}
-                alt="not found 7"
-              />
-              <img
-                className="w-[40px] h-[40px]"
-                src={MongoDB}
-                alt="not found 8"
-              />
-              <img
-                className="w-[40px] h-[40px]"
-                src={Redux}
-                alt="not found 9"
-              />
-              <img
-                className="w-[90px] h-[90px] -mt-[22px]"
-                src={Vercel}
-                alt="not found 10"
-              />
+          {/* heading */}
+          <div className="md:text-2xl md:font-bold md:-mt-10 md:leading-[45px]">
+            {i.heading}
+          </div>
+          {/* subheading */}
+          <div className="md:w-[70%] md:-mt-[15px] text-wrap text-base italic">
+            {i.subHeading}
+          </div>
+          {/* butto or github icon */}
+          <div className="flex md:gap-[0.9rem] items-center">
+            <div>
+              <Button
+                className=" !bg-red-500 md:py-2 md:px-1 md:!mt-1 !shadow-sm !shadow-white md:!text-xs font-semibold cursor-pointer transition-all duration-75 border-2 border-transparent hover:scale-105"
+                variant="contained"
+                endIcon={<SendIcon />}
+              >
+                Read More
+              </Button>
             </div>
-            {/* heading */}
-            <div className="text-2xl font-bold -mt-10 leading-[45px]">
-              {i.heading}
-            </div>
-            {/* subheading */}
-            <div className="w-[70%] -mt-[15px] text-wrap text-base italic">
-              {i.subHeading}
-            </div>
-            {/* butto or github icon */}
-            <div className="flex gap-[0.9rem]  items-center">
-              <div>
-                <Button
-                  className=" !bg-red-500 px-2 py-4 !mt-1 !shadow-md !shadow-purple-950 !text-sm font-semibold cursor-pointer transition-all duration-75 border-2 border-transparent hover:scale-105 "
-                  variant="contained"
-                  endIcon={<SendIcon />}
-                >
-                  Read More
-                </Button>
-              </div>
-              <GitHubButton />
-              <LinkedInButton />
-            </div>
+            <GitHubButton />
+            <LinkedInButton />
           </div>
         </div>
       </div>
