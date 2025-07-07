@@ -8,7 +8,6 @@ const HomePage = () => {
   return (
     <section id="Home">
       <div className="flex-wrap relative md:flex-row flex flex-col md:w-[75%] md:h-[39rem] w-[100%] h-[36rem] items-center justify-center md:gap-13 md:ml-[12%]">
-        {/* left Section  {Text & button}*/}
         <div className="flex flex-col justify-center md:w-[62%] md:h-[95%] w-[100%] h-[50%] md:gap-[5%] gap-[4%] md:mt-[-2%] text-center">
           <div className="md:text-4xl text-3xl md:mt-[8%] mt-[1%] font-normal">
             Hii!! Divya Gupta
@@ -18,15 +17,7 @@ const HomePage = () => {
               I'm a{' '}
               <span className="text-red-700 hover:scale-90 duration-300">
                 <TypeAnimation
-                  sequence={[
-                    // Same substring at the start will only be typed out once, initially
-
-                    'Web',
-                    1000,
-
-                    'Frontend ',
-                    1000,
-                  ]}
+                  sequence={['Web', 1000, 'Frontend ', 1000]}
                   wrapper="span"
                   speed={40}
                   repeat={Infinity}
@@ -55,15 +46,18 @@ const HomePage = () => {
             </Button>
           </div>
         </div>
-        {/* Right Section */}
-        <div className=" relative md:w-[38%] md:h-[90%] w-[80%] flex justify-center items-center">
-          <div className="flex items-center mt-[8%] justify-center">
-            <img
-              className="w-[50%] h-[90%] md:w-[55%] md:h-[50%] items-center justify-center z-auto rounded-md"
-              src={User}
-              alt="6 not found"
-            />
-          </div>
+        <div className="w-full md:w-1/3 flex justify-center">
+          <img
+            src={User}
+            alt="Divya Gupta"
+            className="
+          w-40 h-40        
+          sm:w-48 sm:h-48 
+          md:w-64 md:h-64 
+          lg:w-72 lg:h-72  
+          object-cover rounded-md shadow-lg
+        "
+          />
         </div>
       </div>
     </section>
