@@ -24,64 +24,83 @@ import K8s from '../images/stack/K8s.svg';
 const Skills = () => {
   return (
     <section id="Skills">
-      <div>
-        <div className="flex relative w-[1000px] h-[545px] items-center justify-center gap-[2rem] my-[10rem] mx-auto py-5">
-          <div className="select-none absolute text-6xl mt-0 text-gray-200 font-semibold ease-in-out duration-300 bottom-[-14%] ml-[1372px] ">
-            Skills
-          </div>
-          {/* left part */}
-          <div className="w-[50%] flex flex-col">
-            <h2 className="text-5xl font-semibold text-red-600">
-              <span className="text-[80px]">M</span>e and
+      <div className="relative w-full max-w-[1000px] mx-auto my-20 px-4 md:px-0">
+        <div className="select-none absolute text-6xl text-gray-200 font-semibold bottom-[-3rem] right-0 md:bottom-[-3.5rem] md:right-[-3.5rem] pointer-events-none">
+          Skills
+        </div>
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-center gap-6 md:gap-[2rem] h-auto md:h-[545px]">
+          <div className="w-full md:w-1/2 flex flex-col">
+            <h2 className="text-4xl sm:text-5xl md:text-5xl font-semibold text-red-600 leading-none">
+              <span className="inline-block align-bottom relative">
+                <span className="text-6xl sm:text-8xl">M</span>
+                <span className="text-4xl sm:text-5xl md:text-5xl relative top-1 ">
+                  e and
+                </span>
+              </span>
               <br />
               Mytech Stack
             </h2>
-            <div className="w-[85%] mt-4 text-justify">
-              <p className="my-3 mx-0">
+
+            <div className="text-gray-700 text-sm sm:text-base md:text-base leading-relaxed">
+              <p className="mb-3">
                 As a Passionate Frontend Developer, I specialize in crafting
                 dynamic and responsive web applications using ReactJS and
                 JavaScript. My focus is on delivering seamless user experiences,
                 and I thrive on translating design concepts into functional
                 code.
               </p>
-              <p className="my-4 mx-0">
+              <p className="mb-3">
                 Currently, I am expanding my skill set by diving into the MERN
-                stack, which allows me to build full-stack applications and gain
+                stack, which allows me to build full‑stack applications and gain
                 a comprehensive understanding of both frontend and backend
                 development.
               </p>
-              <p className="my-4 mx-0">
-                To further strengthen my problem-solving skills, I am actively
-                tackling data structures and algorithms challenges. This
-                rigorous practice not only sharpens my analytical thinking but
-                also prepares me for real-world coding scenarios.
+              <p>
+                To further strengthen my problem‑solving skills, I am actively
+                tackling data structures and algorithm challenges. This rigorous
+                practice not only sharpens my analytical thinking but also
+                prepares me for real‑world coding scenarios.
               </p>
             </div>
           </div>
 
-          {/* Right side */}
-          <div className="flex flex-wrap w-[50%]  relative gap-8 justify-center">
-            <img class="blob-style" src={BlogImg} alt="1 not found " />
-            <img class="skills-logo" src={HTML} alt="2 not found " />
-            <img class="skills-logo" src={CSS} alt="3 not found " />
-            <img class="skills-logo" src={Javascript} alt="4 not found " />
-            <img class="skills-logo" src={react} alt="5 not found " />
-            <img class="skills-logo" src={NodeJs} alt="6 not found " />
-            <img class="skills-logo" src={Next} alt="7 not found " />
-            <img class="skills-logo" src={Redux} alt="8 not found " />
-            <img class="skills-logo" src={Tailwind} alt="9 not found " />
-            <img class="skills-logo" src={Bootstrap} alt="10 not found " />
-            <img class="skills-logo" src={MaterialUI} alt="11 not found " />
-            <img class="skills-logo" src={Express} alt="12 not found " />
-            <img class="skills-logo" src={Git} alt="13 not found " />
-            <img class="skills-logo" src={Github} alt="14 not found " />
-            <img class="skills-logo" src={Graphql} alt="15 not found " />
-            <img class="skills-logo" src={MongoDB} alt="16 not found " />
-            <img class="skills-logo" src={Vercel} alt="17 not found " />
-            <img class="skills-logo" src={ChartJs} alt="18 not found " />
-            <img class="skills-logo" src={Bash} alt="19 not found " />
-            <img class="skills-logo" src={Docker} alt="20 not found " />
-            <img class="skills-logo" src={K8s} alt="20 not found " />
+          {/* Right part */}
+          <div className="w-full md:w-1/2 flex flex-wrap justify-center gap-6 md:gap-8">
+            <img
+              className="blob-style w-full md:w-auto"
+              src={BlogImg}
+              alt="Blob Illustration"
+            />
+
+            {[
+              HTML,
+              CSS,
+              Javascript,
+              react,
+              NodeJs,
+              Next,
+              Redux,
+              Tailwind,
+              Bootstrap,
+              MaterialUI,
+              Express,
+              Git,
+              Github,
+              Graphql,
+              MongoDB,
+              Vercel,
+              ChartJs,
+              Bash,
+              Docker,
+              K8s,
+            ].map((Logo, i) => (
+              <img
+                key={i}
+                src={Logo}
+                alt=""
+                className="skills-logo w-12 h-12 sm:w-16 sm:h-16 object-contain"
+              />
+            ))}
           </div>
         </div>
       </div>
