@@ -76,21 +76,13 @@ const Skills = () => {
               Javascript,
               react,
               NodeJs,
-              Next,
               Redux,
               Tailwind,
-              Bootstrap,
               MaterialUI,
               Express,
-              Git,
               Github,
-              Graphql,
               MongoDB,
               Vercel,
-              ChartJs,
-              Bash,
-              Docker,
-              K8s,
             ].map((Logo, i) => (
               <img
                 key={i}
