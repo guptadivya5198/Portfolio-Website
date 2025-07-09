@@ -30,10 +30,10 @@ const Skills = () => {
         </div>
         <div className="flex flex-col md:flex-row items-start md:items-center justify-center gap-6 md:gap-[2rem] h-auto md:h-[545px]">
           <div className="w-full md:w-1/2 flex flex-col">
-            <h2 className="text-4xl sm:text-5xl md:text-5xl font-semibold text-red-600 leading-none">
+            <h2 className="text-4xl sm:text-5xl md:text-5xl font-semibold span1 leading-none">
               <span className="inline-block align-bottom relative">
-                <span className="text-6xl sm:text-8xl">M</span>
-                <span className="text-4xl sm:text-5xl md:text-5xl relative top-1 ">
+                <span className="text-6xl sm:text-8xl span1 ">M</span>
+                <span className="text-4xl sm:text-5xl md:text-5xl span1 relative top-1 ">
                   e and
                 </span>
               </span>

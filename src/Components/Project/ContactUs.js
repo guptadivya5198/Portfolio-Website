@@ -54,12 +54,8 @@ const ContactUs = () => {
       toast.error('Message is required');
       return;
     }
-
-    // All validations passed
     console.log('Form submitted:', formData);
     toast.success('Data Saved Successfully');
-
-    // Reset form after success
     setFormData({
       firstName: '',
       email: '',
@@ -76,7 +72,7 @@ const ContactUs = () => {
     >
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-10">
-          <h1 className="text-4xl sm:text-5xl font-bold text-red-600 mb-3">
+          <h1 className="text-4xl sm:text-5xl font-bold span1 mb-3">
             Contact Me
           </h1>
           <p className="text-gray-600 text-lg sm:text-xl">
