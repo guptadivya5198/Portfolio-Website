@@ -4,6 +4,8 @@ import HomePage from './Components/HomePage';
 import ContactUs from './Components/Project/ContactUs';
 import Projects from './Components/Project/Projects';
 import Skills from './Components/Skills';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function App() {
   return (
@@ -14,6 +16,7 @@ export default function App() {
       <Skills />
       <ContactUs />
       <Footer />
+      <ToastContainer />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
+import { toast } from 'react-toastify';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -22,12 +23,13 @@ const ContactUs = () => {
   function submitHandler(event) {
     event.preventDefault();
     console.log('Form submitted:', formData);
+    toast('Data Saved Successfully');
   }
 
   return (
     <section
       id="Contact Me"
-      className="pt-6 lg:mb-36 sm:mb-44 mb-44 bg-gradient-to-r from-gray-100 to-gray-200 min-h-screen"
+      className="pt-6 lg:mb-0 mb-5 bg-gradient-to-r from-gray-100 to-gray-200 min-h-screen"
     >
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-10">

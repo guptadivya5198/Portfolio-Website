@@ -5,90 +5,55 @@ import { FaTwitter } from 'react-icons/fa';
 import { BiSolidMessageAltDetail } from 'react-icons/bi';
 
 function GitHubButton() {
-  const handleClick = () => {
-    window.open(
-      'https://github.com/guptadivya5198/Portfolio-Website',
-      '_blank'
-    ); // Replace with your desired GitHub URL
-  };
-
   return (
     <GitHubIcon
-      className="cursor-pointer !text-white !text-[32px] mt-1 hover:!text-red-500 transition-all duration-[0.4s]"
-      onClick={handleClick}
+      className="cursor-pointer text-white text-[28px] sm:text-[32px] mt-1 hover:text-red-500 transition-all duration-300"
+      onClick={() =>
+        window.open(
+          'https://github.com/guptadivya5198/Portfolio-Website',
+          '_blank'
+        )
+      }
     />
   );
 }
-function LinkedInButton() {
-  const handleClick = () => {
-    window.open('https://www.linkedin.com/in/divya-gupta-6bb500302/', '_blank'); // Replace with your URL
-  };
 
+function LinkedInButton() {
   return (
     <LinkedInIcon
-      className="cursor-pointer !text-white !text-[32px] mt-1 hover:!text-red-500 transition-all duration-[0.4s]"
-      onClick={handleClick}
+      className="cursor-pointer text-white text-[28px] sm:text-[32px] mt-1 hover:text-red-500 transition-all duration-300"
+      onClick={() =>
+        window.open(
+          'https://www.linkedin.com/in/divya-gupta-6bb500302/',
+          '_blank'
+        )
+      }
     />
   );
 }
+
 const Footer = () => {
   return (
-    <div className="relative -mt-40 bg-blue-900 p-20 w-[1600px] h-52">
-      {/* footer wrapper */}
-      <div className="flex gap-4 p-5 -mt-5 justify-between items-center">
-        {/* footer faded text */}
-        <div className="select-none absolute text-6xl left-0 bottom-1 text-gray-600 font-semibold ease-in-out duration-300">
-          Divya Gupta
-        </div>
-        {/*link wrapper */}
-        <div className="flex gap-5  ">
-          <div>
-            <a
-              className="text-white text-3xl underline font-serif transition-all duration-600 hover:text-red-600"
-              href="#Home"
-            >
-              Home
-            </a>
-          </div>
-          <div>
-            <a
-              className="text-white text-3xl underline font-serif transition-all duration-600 hover:text-red-600"
-              href="#Project"
-            >
-              Project
-            </a>
-          </div>
-          <div>
-            <a
-              className="text-white text-3xl underline font-serif transition-all duration-600 hover:text-red-600"
-              href="#Skills"
-            >
-              Skills
-            </a>
-          </div>
-          <div>
-            <a
-              className="text-white text-3xl underline font-serif  transition-all duration-600 hover:text-red-600"
-              href="#Contact Me"
-            >
-              Contact Me
-            </a>
-          </div>
-        </div>
-        {/* icron-wrapper */}
-        <div className="flex gap-4 !mr-32 transition-all duration-600 hover:text-red-600 ">
-          <LinkedInButton />
-          <GitHubButton />
-          <i>
-            <FaTwitter
-              className="cursor-pointer !text-white !text-[32px] mt-1 hover:!text-red-500 transition-all duration-[0.4s]"
-              onClick={() => window.open('https://twitter.com/', '_blank')}
-            />
-          </i>
-          <i>
-            <BiSolidMessageAltDetail className="cursor-pointer !text-white !text-[32px] mt-1 hover:!text-red-500 transition-all duration-[0.4s]" />
-          </i>
-        </div>
+    <div className=" w-full p-4 bg-blue-900 h-32 mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
+      <div className="flex flex-wrap justify-center sm:justify-start gap-4 sm:gap-6">
+        {['Home', 'Project', 'Skills', 'Contact Me'].map((item, i) => (
+          <a
+            key={i}
+            href={`#${item}`}
+            className="text-white text-lg sm:text-xl underline font-serif hover:text-red-500 transition-colors"
+          >
+            {item}
+          </a>
+        ))}
+      </div>
+      <div className="flex justify-center gap-4">
+        <LinkedInButton />
+        <GitHubButton />
+        <FaTwitter
+          className="cursor-pointer text-white text-[28px] sm:text-[32px] mt-1 hover:text-red-500 transition-all duration-300"
+          onClick={() => window.open('https://twitter.com/', '_blank')}
+        />
+        <BiSolidMessageAltDetail className="cursor-pointer text-white text-[28px] sm:text-[32px] mt-1 hover:text-red-500 transition-all duration-300" />
       </div>
     </div>
   );
