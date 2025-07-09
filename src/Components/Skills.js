@@ -42,7 +42,7 @@ const Skills = () => {
             </h2>
 
             <div className="text-gray-700 text-sm sm:text-base md:text-base leading-relaxed">
-              <p className="mb-3">
+              <p className="mb-3 mt-3">
                 As a Passionate Frontend Developer, I specialize in crafting
                 dynamic and responsive web applications using ReactJS and
                 JavaScript. My focus is on delivering seamless user experiences,
@@ -63,11 +63,9 @@ const Skills = () => {
               </p>
             </div>
           </div>
-
-          {/* Right part */}
           <div className="w-full md:w-1/2 flex flex-wrap justify-center gap-6 md:gap-8">
             <img
-              className="blob-style w-full md:w-auto"
+              className="blob-style  md:w-auto"
               src={BlogImg}
               alt="Blob Illustration"
             />

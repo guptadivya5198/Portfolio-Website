@@ -43,7 +43,7 @@ body {
 
 .blob-style {
   position: absolute;
-  top: -10%;
+  top: -25%;
   left: 2%;
   animation: blobAnimate 3s linear infinite;
   z-index: -5;
@@ -54,13 +54,13 @@ body {
     left: 2%;
   }
   50% {
-    top: 54%;
+    top: 60%;
     left: 56%;
     transform: translate(-50%, -50%);
   }
   100% {
     top: -10%;
-    left: 2%; /* Return to starting position */
+    left: 2%;
   }
 }
 .skills-logo {
