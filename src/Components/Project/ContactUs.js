@@ -22,8 +22,51 @@ const ContactUs = () => {
 
   function submitHandler(event) {
     event.preventDefault();
+
+    const { firstName, email, country, subject, message } = formData;
+
+    if (!firstName.trim()) {
+      toast.error('Name is required');
+      return;
+    }
+    if (!email.trim()) {
+      toast.error('Email is required');
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      toast.error('Please enter a valid email address');
+      return;
+    }
+
+    if (!country.trim()) {
+      toast.error('Please select your country');
+      return;
+    }
+
+    if (!subject.trim()) {
+      toast.error('Subject is required');
+      return;
+    }
+
+    if (!message.trim()) {
+      toast.error('Message is required');
+      return;
+    }
+
+    // All validations passed
     console.log('Form submitted:', formData);
-    toast('Data Saved Successfully');
+    toast.success('Data Saved Successfully');
+
+    // Reset form after success
+    setFormData({
+      firstName: '',
+      email: '',
+      country: '',
+      subject: '',
+      message: '',
+    });
   }
 
   return (
