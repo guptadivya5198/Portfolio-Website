@@ -10,6 +10,7 @@ const ContactUs = () => {
     subject: '',
     message: '',
   });
+
   function changeHandler(event) {
     const { name, value, type, checked } = event.target;
     setFormData((prev) => ({
@@ -20,86 +21,83 @@ const ContactUs = () => {
 
   function submitHandler(event) {
     event.preventDefault();
-    console.log('Finally Printing the value of Form Data');
-    console.log(formData);
+    console.log('Form submitted:', formData);
   }
+
   return (
-    <section id="Contact Me">
-      <div className="w-[1600px] bg-gray-200 -mt-24">
-        <div className="flex flex-col relative w-[1000px] h-[570px] items-center justify-center my-[10rem] mx-auto py-1">
-          <h1 className="text-8xl text-red-600 py-2 mt-5">Contact Me</h1>
-          <h3 className="text-3xl text-slate-400 capitalize text-center mr-20">
+    <section
+      id="Contact Me"
+      className="pt-6 lg:mb-36 sm:mb-44 mb-44 bg-gradient-to-r from-gray-100 to-gray-200 min-h-screen"
+    >
+      <div className="max-w-5xl mx-auto px-4">
+        <div className="text-center mb-10">
+          <h1 className="text-4xl sm:text-5xl font-bold text-red-600 mb-3">
+            Contact Me
+          </h1>
+          <p className="text-gray-600 text-lg sm:text-xl">
             Have any feedback or just want to connect?
-          </h3>
-          <div>
-            <form
-              className=" items-center justify-center gap-6 w-[70%] my-1 mx-20"
-              onSubmit={submitHandler}
-            >
-              <div className="w-[100%]">
-                <input
-                  type="text"
-                  name="firstName"
-                  id="firstName"
-                  placeholder="Enter Your Name"
-                  value={formData.firstName}
-                  onChange={changeHandler}
-                  className="font-light px-1 w-[100%] text-lg h-[40px] my-2 mx-8 rounded-[3px] m-9 shadow-lg"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder=" Enter Your Email"
-                  value={formData.email}
-                  onChange={changeHandler}
-                  className="font-light px-1 w-[100%] text-lg h-[40px] my-2 mx-8 rounded-[3px] m-9 shadow-lg"
-                />
-                <select
-                  name="country"
-                  id="country"
-                  value={formData.country}
-                  onChange={changeHandler}
-                  className="font-light text-gray-400 px-1 w-[100%] text-lg h-[40px] my-2 mx-8 rounded-[3px] m-9 shadow-lg"
-                >
-                  <option>India</option>
-                  <option>United States</option>
-                  <option>Canada</option>
-                  <option>Mexico</option>
-                </select>
-                <input
-                  type="text"
-                  name="subject"
-                  id="subject"
-                  placeholder="Subject"
-                  value={formData.subject}
-                  onChange={changeHandler}
-                  className="font-light px-1 w-[100%] text-lg h-[40px] my-2 mx-8 rounded-[3px] m-9 shadow-lg"
-                />
-                <textarea
-                  type="text"
-                  name="message"
-                  id="message"
-                  placeholder="Enter Your Message"
-                  cols={30}
-                  rows={4}
-                  value={formData.message}
-                  onChange={changeHandler}
-                  className="font-light px-1 w-[100%] text-lg h-auto pt-3 my-2 mx-8 rounded-[3px] m-9 shadow-lg"
-                />
-              </div>
-              <div className="ml-8 mb-12">
-                <Button
-                  className="w-fit !bg-red-500 px-4 py-1 !mt-1 !shadow-md !shadow-purple-950 !text-base font-semibold cursor-pointer transition-all duration-75  border-transparent hover:scale-95 "
-                  variant="contained"
-                  endIcon={<SendIcon />}
-                >
-                  Send Message
-                </Button>
-              </div>
-            </form>
-          </div>
+          </p>
         </div>
+
+        <form
+          onSubmit={submitHandler}
+          className="bg-white rounded-lg shadow-2xl p-8 grid grid-cols-1 sm:grid-cols-2 gap-6"
+        >
+          <input
+            type="text"
+            name="firstName"
+            placeholder="Your Name"
+            value={formData.firstName}
+            onChange={changeHandler}
+            className="col-span-1 sm:col-span-1 px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-300 transition-all"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={formData.email}
+            onChange={changeHandler}
+            className="col-span-1 sm:col-span-1 px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-400 transition-all"
+          />
+          <select
+            name="country"
+            value={formData.country}
+            onChange={changeHandler}
+            className="col-span-1 sm:col-span-2 px-4 py-3 rounded-md border border-gray-300 text-gray-600 focus:outline-none focus:ring-2 focus:ring-red-400 transition-all"
+          >
+            <option value="">Select Country</option>
+            <option>India</option>
+            <option>United States</option>
+            <option>Canada</option>
+            <option>Mexico</option>
+          </select>
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            value={formData.subject}
+            onChange={changeHandler}
+            className="col-span-1 sm:col-span-2 px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-400 transition-all"
+          />
+          <textarea
+            name="message"
+            placeholder="Enter Your Message"
+            rows={5}
+            value={formData.message}
+            onChange={changeHandler}
+            className="col-span-1 sm:col-span-2 px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-400 transition-all resize-none"
+          />
+          <div className="col-span-1 sm:col-span-2 flex justify-center sm:justify-end mt-4">
+            <Button
+              type="submit"
+              className="!bg-red-500 !text-white hover:!bg-red-600 shadow-md px-6 py-2 text-lg rounded-md"
+              variant="contained"
+              endIcon={<SendIcon />}
+            >
+              Send Message
+            </Button>
+          </div>
+        </form>
       </div>
     </section>
   );
